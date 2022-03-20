@@ -43,3 +43,4 @@ $ wsl --install -d Ubuntu-20.04
 - https://code.visualstudio.com/download
   ### 3.1. in Visual Studio Code
   - install Remote - WSL https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl
+  - changing shell color theme https://glitchbone.github.io/vscode-base16-term/#/icy
