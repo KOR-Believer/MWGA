@@ -38,6 +38,7 @@ $ wsl --install -d Ubuntu-20.04
     $ test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
     $ test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
     $ echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
+    $ echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.zshrc
     ```
 ## 3. Install Visual Studio Code
 https://code.visualstudio.com/download
