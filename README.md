@@ -3,7 +3,7 @@ Make Windows Great Again
 
 ## 1. Install Windows terminal
 https://www.microsoft.com/ko-kr/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab
-- color theme
+- changing shell color theme
   - https://windowsterminalthemes.dev/
   - https://popcorn16.tistory.com/118
 
