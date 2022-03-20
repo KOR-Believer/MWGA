@@ -20,11 +20,12 @@ $ wsl --list --online
 $ wsl --install -d Ubuntu-20.04
 ```
 
-### 2.1. in Ubuntu 20.04
-  - Changing starting directory to "/home/[username]" 
+### 2.1. in WSL2 Ubuntu 20.04
+  - Windows terminal Settings 
+    - Changing starting directory to "/home/[username]" 
+
   - apt update
     ```bash
-    # update
     $ sudo apt update
     ```
   - Install zsh
@@ -36,10 +37,7 @@ $ wsl --install -d Ubuntu-20.04
     $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     ```
   - Install Linuxbrew
-    ```zsh
-    # update
-    $ sudo apt update
-    
+    ```zsh    
     # Install tool require to setup Brew 
     $ sudo apt-get install build-essential curl file git
     
