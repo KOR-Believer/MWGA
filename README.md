@@ -1,5 +1,6 @@
 # MWGA
-Make Windows Great Again
+> Make Windows Great Again!
+
 
 ## 1. Install Windows terminal
 - Download [From here](https://www.microsoft.com/ko-kr/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab).
