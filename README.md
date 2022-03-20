@@ -40,7 +40,7 @@ $ wsl --install -d Ubuntu-20.04
     $ echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
     ```
 ## 3. Install Visual Studio Code
-- https://code.visualstudio.com/download
-  ### 3.1. in Visual Studio Code
-  - install Remote - WSL https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl
-  - changing shell color theme https://glitchbone.github.io/vscode-base16-term/#/icy
+https://code.visualstudio.com/download
+### 3.1. in Visual Studio Code
+- install Remote - WSL https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl
+- changing shell color theme https://glitchbone.github.io/vscode-base16-term/#/icy
