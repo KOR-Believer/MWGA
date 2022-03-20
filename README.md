@@ -22,6 +22,19 @@ $ wsl --install -d Ubuntu-20.04
 
 ### 2.1. in Ubuntu 20.04
   - Changing starting directory to "/home/[username]" 
+  - apt update
+    ```bash
+    # update
+    $ sudo apt update
+    ```
+  - Install zsh
+    ```zsh
+    $ sudo apt install zsh
+    ```
+  - Install ohmyzsh
+    ```zsh
+    $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    ```
   - Install Linuxbrew
     ```zsh
     # update
@@ -39,6 +52,11 @@ $ wsl --install -d Ubuntu-20.04
     $ test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
     $ echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
     $ echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.zshrc
+    ```
+  - install pyenv
+    ```zsh
+    $ brew install pyenv
+    $ echo -e "\n\n# pyenv environment variables\nexport PYENV_ROOT=\"\$HOME/.pyenv\"\nexport PATH=\"\$PYENV_ROOT/bin:\$PATH\"\n\n# pyenv initialization\nif command -v pyenv 1>/dev/null 2>&1; then\n  eval \"\$(pyenv init --path)\"\nfi\n\n" >> ~/.zshrc
     ```
 ## 3. Install Visual Studio Code
 https://code.visualstudio.com/download
