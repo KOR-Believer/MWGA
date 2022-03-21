@@ -1,11 +1,13 @@
 # MWGA
 > Make Windows Great Again!
 
+## 1. Install PowerToys
+- Download [From here](https://github.com/microsoft/PowerToys/releases).
 
-## 1. Install Windows terminal
+## 2. Install Windows terminal
 - Download [From here](https://www.microsoft.com/ko-kr/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab).
 
-## 2. Install WSL2
+## 3. Install WSL2
 - install WSL2 in PowerShell
   ```PowerShell
   # install wsl2
@@ -17,7 +19,7 @@
   # install Ubuntu 20.04
   $ wsl --install -d Ubuntu-20.04
   ```
-### 2.1. in WSL2 Ubuntu 20.04
+### 3.1. in WSL2 Ubuntu 20.04
   - in Windows terminal Settings 
     - Changing starting directory to "/home/[username]" 
     - changing shell color theme
@@ -69,8 +71,8 @@
     $ sudo ln -s "$NVM_DIR/versions/node/$(nvm version)/bin/node" "/usr/local/bin/node"
     $ sudo ln -s "$NVM_DIR/versions/node/$(nvm version)/bin/npm" "/usr/local/bin/npm"
     ```
-## 3. Install Visual Studio Code
+## 4. Install Visual Studio Code
 https://code.visualstudio.com/download
-### 3.1. in Visual Studio Code
+### 4.1. in Visual Studio Code
 - install Remote - WSL https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl
 - changing shell color theme https://glitchbone.github.io/vscode-base16-term/#/icy
