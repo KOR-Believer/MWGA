@@ -29,15 +29,15 @@
     ```bash
     $ sudo apt update
     ```
-  - Install zsh
+  - Install `zsh`
     ```zsh
     $ sudo apt install zsh
     ```
-  - Install ohmyzsh
+  - Install `oh-my-zsh`
     ```zsh
     $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     ```
-  - Install Linuxbrew
+  - Install `Linuxbrew`
     ```zsh    
     # Install tool require to setup Brew 
     $ sudo apt-get install build-essential curl file git
@@ -52,10 +52,22 @@
     $ echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
     $ echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.zshrc
     ```
-  - install pyenv
+  - Install `pyenv`
     ```zsh
+    # install from brew
     $ brew install pyenv
+    
+    # add pyenv to zsh
     $ echo -e "\n\n# pyenv environment variables\nexport PYENV_ROOT=\"\$HOME/.pyenv\"\nexport PATH=\"\$PYENV_ROOT/bin:\$PATH\"\n\n# pyenv initialization\nif command -v pyenv 1>/dev/null 2>&1; then\n  eval \"\$(pyenv init --path)\"\nfi\n\n" >> ~/.zshrc
+    ```
+  - Install `nvm`
+    ```zsh
+    # install script
+    $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+    
+    # allow sudo at node and npm
+    $ sudo ln -s "$NVM_DIR/versions/node/$(nvm version)/bin/node" "/usr/local/bin/node"
+    $ sudo ln -s "$NVM_DIR/versions/node/$(nvm version)/bin/npm" "/usr/local/bin/npm"
     ```
 ## 3. Install Visual Studio Code
 https://code.visualstudio.com/download
