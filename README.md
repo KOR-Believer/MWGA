@@ -71,6 +71,16 @@
     $ sudo ln -s "$NVM_DIR/versions/node/$(nvm version)/bin/node" "/usr/local/bin/node"
     $ sudo ln -s "$NVM_DIR/versions/node/$(nvm version)/bin/npm" "/usr/local/bin/npm"
     ```
+  - nameserver setting
+    ```zsh
+    $ sudo rm /etc/resolv.conf
+    $ sudo bash -c 'echo "nameserver 1.1.1.1" > /etc/resolv.conf'
+    $ sudo bash -c 'echo "nameserver 8.8.8.8" > /etc/resolv.conf'
+    $ sudo bash -c 'echo "nameserver 8.8.4.4" > /etc/resolv.conf'
+    $ sudo bash -c 'echo "[network]" > /etc/wsl.conf'
+    $ sudo bash -c 'echo "generateResolvConf = false" >> /etc/wsl.conf'
+    $ sudo chattr +i /etc/resolv.conf
+    ```
 ## 4. Install Visual Studio Code
 https://code.visualstudio.com/download
 ### 4.1. in Visual Studio Code
