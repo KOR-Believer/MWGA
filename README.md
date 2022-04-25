@@ -81,6 +81,39 @@
     $ sudo bash -c 'echo "generateResolvConf = false" >> /etc/wsl.conf'
     $ sudo chattr +i /etc/resolv.conf
     ```
+  - install mysql@5.7 (local)
+    ```zsh
+    # install mysql@5.7 from brew
+    $ brew install mysql@5.7
+    
+    # add PATH
+    $ echo 'export PATH="/home/linuxbrew/.linuxbrew/opt/mysql@5.7/bin:$PATH"' >> ~/.zshrc
+    
+    $ mysql_secure_installation
+      Would you like to setup VALIDATE PASSWORD plugin? Press y|Y for Yes, any other key for No: n
+      New password: your_root_password
+      Re-enter new password: your_root_password
+      Remove anonymous users? (Press y|Y for Yes, any other key for No) : y
+      Disallow root login remotely? (Press y|Y for Yes, any other key for No) : y
+      Remove test database and access to it? (Press y|Y for Yes, any other key for No) : n
+      Reload privilege tables now? (Press y|Y for Yes, any other key for No) : y
+      All done!
+    
+    # find my.cnf file
+    $ mysql --verbose --help | grep my.cnf
+      /etc/my.cnf /etc/mysql/my.cnf /home/linuxbrew/.linuxbrew/etc/my.cnf ~/.my.cnf
+    
+    # change bind-address 127.0.0.1 to 0.0.0.0 in my.cnf
+    $ vi /home/linuxbrew/.linuxbrew/etc/my.cnf
+      # Default Homebrew MySQL server config
+      [mysqld]
+      # Only allow connections from localhost
+      bind-address = 0.0.0.0
+    
+    $ ifconfig
+      eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.20.184.132 ... # HOST OS(WINDOWS) MYSQL ENDPOINT (for Mysql Workbench)
+    ```
 ## 4. Install Visual Studio Code
 https://code.visualstudio.com/download
 ### 4.1. in Visual Studio Code
