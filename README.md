@@ -113,6 +113,23 @@
     $ ifconfig
       eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         inet 172.20.184.132 ... # HOST OS(WINDOWS) MYSQL ENDPOINT (for Mysql Workbench)
+    $ mysql.server start
+    $ mysql -u root -p
+      Enter password: your_root_password
+    
+    Welcome to the MySQL monitor.  Commands end with ; or \g.
+    Your MySQL connection id is 25
+    Server version: 5.7.37 Homebrew
+
+    Copyright (c) 2000, 2022, Oracle and/or its affiliates.
+
+    Oracle is a registered trademark of Oracle Corporation and/or its
+    affiliates. Other names may be trademarks of their respective
+    owners.
+
+    Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+    mysql>
     ```
 ## 4. Install Visual Studio Code
 https://code.visualstudio.com/download
