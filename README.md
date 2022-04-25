@@ -81,7 +81,7 @@
     $ sudo bash -c 'echo "generateResolvConf = false" >> /etc/wsl.conf'
     $ sudo chattr +i /etc/resolv.conf
     ```
-  - install mysql@5.7 (local)
+  - install `mysql@5.7` (local)
     ```zsh
     # install mysql@5.7 from brew
     $ brew install mysql@5.7
